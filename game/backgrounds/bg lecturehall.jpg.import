@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bg uni.jpg-9884d3c5e41979dbb923c3e6019bb5a1.stex"
+path="res://.import/bg lecturehall.jpg-4bdc9b9050b38569fa6de78def71fbd8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/renpy/images/bg uni.jpg"
-dest_files=[ "res://.import/bg uni.jpg-9884d3c5e41979dbb923c3e6019bb5a1.stex" ]
+source_file="res://game/backgrounds/bg lecturehall.jpg"
+dest_files=[ "res://.import/bg lecturehall.jpg-4bdc9b9050b38569fa6de78def71fbd8.stex" ]
 
 [params]
 

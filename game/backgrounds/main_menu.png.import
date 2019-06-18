@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bg meadow.jpg-3240968be193e1e8002254a129657056.stex"
+path="res://.import/main_menu.png-7eb9a67e2b20e5260827f1f433a9245c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/renpy/images/bg meadow.jpg"
-dest_files=[ "res://.import/bg meadow.jpg-3240968be193e1e8002254a129657056.stex" ]
+source_file="res://game/backgrounds/main_menu.png"
+dest_files=[ "res://.import/main_menu.png-7eb9a67e2b20e5260827f1f433a9245c.stex" ]
 
 [params]
 

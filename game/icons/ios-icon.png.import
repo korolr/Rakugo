@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/android-icon_foreground.png-0bb80713c920ac0d42e4ebb1caedec11.stex"
+path="res://.import/ios-icon.png-ee4b5429e4869b532683d04df4ea423e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/android-icon_foreground.png"
-dest_files=[ "res://.import/android-icon_foreground.png-0bb80713c920ac0d42e4ebb1caedec11.stex" ]
+source_file="res://game/icons/ios-icon.png"
+dest_files=[ "res://.import/ios-icon.png-ee4b5429e4869b532683d04df4ea423e.stex" ]
 
 [params]
 
