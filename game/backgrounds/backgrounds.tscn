@@ -8,39 +8,32 @@
 [ext_resource path="res://game/backgrounds/bg uni.jpg" type="Texture" id=6]
 
 [node name="backgrounds" type="Node2D"]
+position = Vector2( 511.814, 298.957 )
+scale = Vector2( 0.8, 0.835 )
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="bg lecturehall" type="Sprite" parent="."]
-visible = false
-position = Vector2( 511.57, 299.741 )
-scale = Vector2( 0.797788, 0.830714 )
 texture = ExtResource( 2 )
 script = ExtResource( 3 )
-node_id = "bg lecturehall"
+node_id = ""
 
 [node name="bg club" type="Sprite" parent="."]
-visible = false
-position = Vector2( 511.57, 299.741 )
-scale = Vector2( 0.797788, 0.830714 )
 texture = ExtResource( 4 )
 script = ExtResource( 3 )
-node_id = "bg lecturehall"
+node_id = ""
 
 [node name="bg meadow" type="Sprite" parent="."]
-visible = false
-position = Vector2( 511.57, 299.741 )
-scale = Vector2( 0.797788, 0.830714 )
 texture = ExtResource( 5 )
 script = ExtResource( 3 )
-node_id = "bg lecturehall"
+node_id = ""
 
 [node name="bg uni" type="Sprite" parent="."]
-visible = false
-position = Vector2( 511.57, 299.741 )
-scale = Vector2( 0.797788, 0.830714 )
 texture = ExtResource( 6 )
 script = ExtResource( 3 )
-node_id = "bg lecturehall"
+node_id = ""
 [connection signal="visibility_changed" from="bg lecturehall" to="." method="_on_bg_lecturehall_visibility_changed"]
 [connection signal="visibility_changed" from="bg club" to="." method="_on_bg_club_visibility_changed"]
 [connection signal="visibility_changed" from="bg meadow" to="." method="_on_bg_meadow_visibility_changed"]

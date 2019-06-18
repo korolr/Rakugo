@@ -570,7 +570,7 @@ func menu(parameters:Dictionary) -> void:
 ## "at" is lists that can have: "top", "center", "bottom", "right", "left"
 func show(
 	node_id:String,
-	parameters := {"state": [], "at":["center", "bottom"]}
+	parameters := {"state": []}
 	):
 
 	parameters["node_id"] = node_id

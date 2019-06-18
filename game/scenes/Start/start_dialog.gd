@@ -8,7 +8,7 @@ func start(node_name, dialog_name):
 
 	match get_story_state():
 		0:
-			show("bg lecturehall",{"at":["center"]})
+			show("bg lecturehall")
 			# play music "illurock.opus"
 			say({
 			"what":

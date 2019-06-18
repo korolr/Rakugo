@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=2]
 
-[ext_resource path="res://themes/new_gui/new_gui.theme" type="Theme" id=1]
+[ext_resource path="res://themes/question/question.theme" type="Theme" id=1]
 [ext_resource path="res://addons/Rakugo/nodes/rakugo_control.gd" type="Script" id=2]
 [ext_resource path="res://addons/Rakugo/nodes/rakugo_menu.gd" type="Script" id=3]
 [ext_resource path="res://addons/Rakugo/icons/rakugo_menu_v.svg" type="Texture" id=4]
@@ -15,6 +15,8 @@
 [ext_resource path="res://ubuntu-font-family/UbuntuMono-R.ttf" type="DynamicFontData" id=13]
 [ext_resource path="res://ubuntu-font-family/Ubuntu-RI.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://ubuntu-font-family/Ubuntu-R.ttf" type="DynamicFontData" id=15]
+
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 22

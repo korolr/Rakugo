@@ -72,7 +72,7 @@ func ask(parameters:Dictionary) -> void:
 func menu(parameters:Dictionary) -> void:
 	Rakugo.menu(parameters)
 
-func show(node_id:String, parameters := {"state": [], "at":["center", "bottom"]}):
+func show(node_id:String, parameters := {"state": []}):
 	Rakugo.show(node_id, parameters)
 
 func hide(node_id:String) -> void:

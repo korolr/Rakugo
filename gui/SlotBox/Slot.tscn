@@ -1,8 +1,10 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://themes/new_gui/new_gui.theme" type="Theme" id=1]
+[ext_resource path="res://themes/question/question.theme" type="Theme" id=1]
 [ext_resource path="res://addons/Rakugo/nodes/save_button.gd" type="Script" id=2]
 [ext_resource path="res://ubuntu-font-family/Ubuntu-L.ttf" type="DynamicFontData" id=3]
+
+
 
 [sub_resource type="StyleBoxFlat" id=1]
 content_margin_left = 6.0

@@ -15,19 +15,26 @@ z_index = -2
 [node name="bg lecturehall" parent="backgrounds" index="0" groups=[
 "save",
 ]]
-visible = true
+node_id = "bg lecturehall"
+at_x = "center"
 
 [node name="bg club" parent="backgrounds" index="1" groups=[
 "save",
 ]]
+node_id = "bg club"
+at_x = "center"
 
 [node name="bg meadow" parent="backgrounds" index="2" groups=[
 "save",
 ]]
+node_id = "bg meadow"
+at_x = "center"
 
 [node name="bg uni" parent="backgrounds" index="3" groups=[
 "save",
 ]]
+node_id = "bg uni"
+at_x = "center"
 
 [node name="dialog" type="Node" parent="."]
 script = ExtResource( 3 )
