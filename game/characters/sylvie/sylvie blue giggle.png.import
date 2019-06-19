@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sylvie green giggle.png-d7549d864c2a0b876d99b89a8bcbf3bf.stex"
+path="res://.import/sylvie blue giggle.png-51d6e3639e2b69c091d253d5c766b977.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/renpy/images/sylvie green giggle.png"
-dest_files=[ "res://.import/sylvie green giggle.png-d7549d864c2a0b876d99b89a8bcbf3bf.stex" ]
+source_file="res://game/characters/sylvie/sylvie blue giggle.png"
+dest_files=[ "res://.import/sylvie blue giggle.png-51d6e3639e2b69c091d253d5c766b977.stex" ]
 
 [params]
 

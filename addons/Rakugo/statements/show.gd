@@ -11,10 +11,16 @@ func _init() -> void:
 	parameters_names = required + optional
 
 func exec() -> void:
-	debug(parameters_names)
-
 	if not("state" in parameters):
 		parameters["state"] = []
+
+	var node_id = parameters.node_id
+
+	if " " in node_id:
+		var s = node_id.split(" ", false)
+		parameters.node_id = s[0]
+		s.remove(0)
+		parameters.state = s
 
 	var any_oparam = false
 	for p in optional:
@@ -42,10 +48,9 @@ func exec() -> void:
 			parameters["y"] = 1.0
 
 	var p = parameters
-	
-	print(p)
 
 	if not any_oparam:
 		p = {}
 
+	debug(parameters_names)
 	Rakugo.on_show(parameters.node_id, parameters.state, p)

@@ -25,7 +25,7 @@ func check_dialog(node_name, dialog_name, check_for) -> bool:
 		result = false
 
 	if name.begins_with("@"):
-		var real_name = name.split("@")[1]
+		var real_name = name.split("@", false)[0]
 
 		if node_name != real_name:
 			result = false

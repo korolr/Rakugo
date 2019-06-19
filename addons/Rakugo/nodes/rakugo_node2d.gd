@@ -26,7 +26,7 @@ func _ready() -> void:
 
 	Rakugo.connect("show", self, "_on_show")
 	Rakugo.connect("hide", self, "_on_hide")
-	rnode.connect("on_substate", self, "_on_rnode_substate")
+	rnode.connect("on_substate", self, "_on_substate")
 
 	if node_id.empty():
 		node_id = name

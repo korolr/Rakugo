@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/Rakugo/nodes/character.gd" type="Script" id=1]
+
+[node name="Characters" type="Node2D"]
+
+[node name="Me" type="Node" parent="."]
+script = ExtResource( 1 )
+character_id = "m"
+character_name = "Me"
+color = Color( 0.784314, 0.784314, 1, 1 )
+stats = {
+
+}
+kind = "adv"
+
+[node name="Sylvie" type="Node" parent="."]
+script = ExtResource( 1 )
+character_id = "s"
+character_name = "Sylvie"
+color = Color( 0.784314, 1, 0.784314, 1 )
+stats = {
+
+}
+kind = "adv"

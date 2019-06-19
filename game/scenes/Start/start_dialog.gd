@@ -32,3 +32,10 @@ func start(node_name, dialog_name):
 				"what":
 				 "It's a question that I've been meaning to ask a certain someone."
 			})
+
+		4:
+			show("bg uni")
+			say({
+			"what":
+				"When we come out of the university, I spot her right away."
+			})

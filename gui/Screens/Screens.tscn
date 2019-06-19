@@ -4583,7 +4583,7 @@ register = false
 node_id = "Screens"
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_top = -1.0
+margin_top = -2.0
 margin_right = 1022.0
 margin_bottom = 601.0
 texture = ExtResource( 3 )
@@ -4648,7 +4648,6 @@ rakugo_text = "{right}Rakugo [rakugo_version]"
 vars_names = [ "rakugo_version" ]
 
 [node name="Navigation" type="Panel" parent="."]
-editor/display_folded = true
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -1.0
