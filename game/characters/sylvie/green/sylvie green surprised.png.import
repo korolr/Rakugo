@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sylvie green surprised.png-c74d10b43f89942a412757d96bc899e6.stex"
+path="res://.import/sylvie green surprised.png-dc0a1eb0a4c83ac7b4bb77fb9ff2c38e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/characters/sylvie/sylvie green surprised.png"
-dest_files=[ "res://.import/sylvie green surprised.png-c74d10b43f89942a412757d96bc899e6.stex" ]
+source_file="res://game/characters/sylvie/green/sylvie green surprised.png"
+dest_files=[ "res://.import/sylvie green surprised.png-dc0a1eb0a4c83ac7b4bb77fb9ff2c38e.stex" ]
 
 [params]
 

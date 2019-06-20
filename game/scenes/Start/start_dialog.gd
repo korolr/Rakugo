@@ -39,3 +39,28 @@ func start(node_name, dialog_name):
 			"what":
 				"When we come out of the university, I spot her right away."
 			})
+
+		5:
+			show("sylvie green normal")
+			say({
+			"what":
+				"I've known [s.name] since we were kids. She's got a big heart and she's always been a good friend to me."
+			})
+
+		6:
+			say({
+			"what":
+				"But recently... I've felt that I want something more."
+			})
+
+		7:
+			say({
+			"what":
+		    "But recently... I've felt that I want something more."
+			})
+
+		8:
+			say({
+			"what":
+				"More than just talking, more than just walking home together when our classes end."
+			})

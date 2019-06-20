@@ -1,4 +1,3 @@
-tool
 extends RakugoNode2D
 
 func _on_substate(substate):

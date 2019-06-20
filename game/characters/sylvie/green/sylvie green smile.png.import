@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sylvie green smile.png-bdb8611d95c96f3ca30c6bcc4c4f7ac8.stex"
+path="res://.import/sylvie green smile.png-86508c50c34778f56aadd3870cb08f4d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/characters/sylvie/sylvie green smile.png"
-dest_files=[ "res://.import/sylvie green smile.png-bdb8611d95c96f3ca30c6bcc4c4f7ac8.stex" ]
+source_file="res://game/characters/sylvie/green/sylvie green smile.png"
+dest_files=[ "res://.import/sylvie green smile.png-86508c50c34778f56aadd3870cb08f4d.stex" ]
 
 [params]
 

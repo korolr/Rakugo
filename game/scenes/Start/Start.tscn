@@ -1,8 +1,38 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://addons/Rakugo/nodes/root_node2d.gd" type="Script" id=1]
 [ext_resource path="res://game/backgrounds/backgrounds.tscn" type="PackedScene" id=2]
 [ext_resource path="res://game/scenes/Start/start_dialog.gd" type="Script" id=3]
+[ext_resource path="res://game/characters/Characters.tscn" type="PackedScene" id=4]
+[ext_resource path="res://addons/Rakugo/nodes/rakugo_anim_player.gd" type="Script" id=5]
+
+[sub_resource type="Animation" id=1]
+resource_name = "sylvie_go"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.8, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 278.565, 262.695 ), Vector2( 286.323, 281.349 ), Vector2( 290.225, 301.29 ), Vector2( 296.464, 299.751 ), Vector2( 302.453, 304.557 ), Vector2( 308.698, 301.247 ), Vector2( 316.024, 303.408 ), Vector2( 322.242, 309.31 ), Vector2( 328.46, 305.343 ), Vector2( 335.758, 316.082 ), Vector2( 342.486, 308.705 ), Vector2( 349.199, 317.754 ), Vector2( 355.355, 310.879 ), Vector2( 363.565, 321.508 ), Vector2( 369.657, 313.336 ), Vector2( 375.749, 304.916 ), Vector2( 384.408, 314.24 ), Vector2( 390.412, 301.305 ), Vector2( 399.356, 320.451 ), Vector2( 404.515, 304.367 ), Vector2( 410.438, 319.044 ), Vector2( 417.589, 304.463 ), Vector2( 425.917, 332.238 ), Vector2( 430.454, 314.641 ), Vector2( 437.502, 338.341 ), Vector2( 438.354, 313.047 ), Vector2( 449.273, 338.091 ), Vector2( 455.022, 316.417 ), Vector2( 460.772, 341.328 ), Vector2( 468.977, 319.369 ), Vector2( 474.573, 339.229 ), Vector2( 476.486, 303.76 ), Vector2( 482.345, 317.429 ), Vector2( 488.204, 333.667 ), Vector2( 488.789, 295.845 ), Vector2( 505.676, 324.669 ), Vector2( 519.75, 299.873 ), Vector2( 550.429, 341.102 ), Vector2( 569.02, 310.689 ), Vector2( 620.262, 358.134 ), Vector2( 648.648, 334.67 ), Vector2( 595.46, 365.706 ), Vector2( 557.648, 319.657 ), Vector2( 558.514, 322.834 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7, 1, 5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.03, 0.03 ), Vector2( 0.04, 0.04 ), Vector2( 0.05, 0.05 ), Vector2( 0.07, 0.07 ), Vector2( 1, 1 ) ]
+}
 
 [node name="Start" type="Node2D"]
 script = ExtResource( 1 )
@@ -16,5 +46,14 @@ z_index = -2
 script = ExtResource( 3 )
 begin_from = [ "dialog", "start" ]
 dialogs_names = [ "start" ]
+
+[node name="Characters" parent="." instance=ExtResource( 4 )]
+position = Vector2( 558.514, 322.834 )
+z_index = -1
+
+[node name="RakugoAnimPlayer" type="AnimationPlayer" parent="Characters"]
+anims/sylvie_go = SubResource( 1 )
+script = ExtResource( 5 )
+node_id = "RakugoAnimPlayer"
 
 [editable path="backgrounds"]
