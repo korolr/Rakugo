@@ -64,3 +64,30 @@ func start(node_name, dialog_name):
 			"what":
 				"More than just talking, more than just walking home together when our classes end."
 			})
+
+		9:
+			menu({
+			"what":
+				"As soon as she catches my eye, I decide...",
+			"choices":
+				{
+					"To ask her right away.": "rightaway",
+					"To ask her later.": "later"
+				}
+			})
+
+func rightaway(node_name, dialog_name):
+	var cd = check_dialog(node_name, dialog_name, "rightaway")
+
+	if not cd:
+		return
+
+	jump("Start, rightaway", "rightaway")
+
+func later(node_name, dialog_name):
+	var cd = check_dialog(node_name, dialog_name, "later")
+
+	if not cd:
+		return
+
+	jump("Start", "later", "later")

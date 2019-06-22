@@ -13,9 +13,11 @@
 [ext_resource path="res://game/characters/sylvie/blue/sylvie blue smile.png" type="Texture" id=11]
 [ext_resource path="res://game/characters/sylvie/blue/sylvie blue surprised.png" type="Texture" id=12]
 
-[node name="Characters" type="Node2D"]
+[node name="characters" type="Node2D"]
 
-[node name="Me" type="Node" parent="."]
+[node name="Me" type="Node" parent="." groups=[
+"save",
+]]
 script = ExtResource( 1 )
 character_id = "m"
 character_name = "Me"
@@ -32,7 +34,9 @@ scale = Vector2( 0.8, 0.8 )
 script = ExtResource( 2 )
 node_id = "sylvie"
 
-[node name="Character" type="Node" parent="Sylvie"]
+[node name="Character" type="Node" parent="Sylvie" groups=[
+"save",
+]]
 script = ExtResource( 1 )
 character_id = "s"
 character_name = "Sylvie"
@@ -69,7 +73,6 @@ texture = ExtResource( 7 )
 [node name="blue" type="Sprite" parent="Sylvie"]
 editor/display_folded = true
 visible = false
-scale = Vector2( 1, 1 )
 texture = ExtResource( 8 )
 
 [node name="giggle" type="Sprite" parent="Sylvie/blue"]
