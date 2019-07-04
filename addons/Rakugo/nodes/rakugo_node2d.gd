@@ -37,7 +37,7 @@ func _ready() -> void:
 		node_link = Rakugo.node_link(node_id, get_path())
 
 	else:
-		node_link.value["node_path"] = get_path()
+		node_link.node_path = get_path()
 
 	add_to_group("save", true)
 
@@ -95,9 +95,10 @@ func _exit_tree() -> void:
 		remove_from_group("save")
 		return
 
-	Rakugo.variables.erase(node_id)
+	var id = NodeLink._get_var_prefix + node_id
+	Rakugo.variables.erase(id)
 
-func  on_save() -> void:
+func on_save() -> void:
 	node_link = Rakugo.get_node_link(node_id)
 	node_link.value["visible"] = visible
 	node_link.value["state"] = _state

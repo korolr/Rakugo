@@ -41,7 +41,7 @@ enum Type {
 	BOOL,		# 9
 	VECT2, # 10
 	VECT3, # 11
-	VECT4, # 12
+	AVATAR, # 12
 	COLOR, # 13
 }
 
@@ -474,7 +474,11 @@ func get_value(var_name:String):
 	return null
 
 func get_node_value(var_name:String) -> Dictionary:
-	var s = NodeLink.new("").var_suffix
+	var s = NodeLink._get_var_prefix
+	return get_value(s + var_name)
+
+func get_avatar_value(var_name:String) -> Dictionary:
+	var s = Avatar._get_var_prefix
 	return get_value(s + var_name)
 
 ## returns type of variable defined using define
@@ -512,7 +516,16 @@ func node_link(node_id:String, node:NodePath) -> NodeLink:
 	return $Define.node_link(node_id, node, variables)
 
 func get_node_link(node_id:String) -> NodeLink:
-	var s = NodeLink.new("").var_suffix
+	var s = NodeLink.new("").var_prefix
+	return get_var(s + node_id) as NodeLink
+
+## crate new link to node avatar as global variable that Rakugo will see
+## it can have name as other existing varbiable
+func avatar_link(node_id:String, node:NodePath) -> Avatar:
+	return $Define.avatar_link(node_id, node, variables)
+
+func get_avatar_link(node_id:String) -> Avatar:
+	var s = NodeLink.new("").var_prefix
 	return get_var(s + node_id) as NodeLink
 
 ## add/overwrite global subquest that Rakugo will see
