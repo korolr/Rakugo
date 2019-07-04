@@ -82,7 +82,7 @@ func rightaway(node_name, dialog_name):
 	if not cd:
 		return
 
-	jump("Start, rightaway", "rightaway")
+	jump("Start", " rightaway", "rightaway")
 
 func later(node_name, dialog_name):
 	var cd = check_dialog(node_name, dialog_name, "later")

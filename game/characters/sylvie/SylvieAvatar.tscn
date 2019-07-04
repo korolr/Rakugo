@@ -5,6 +5,7 @@
 
 [node name="SylvieAvatar" type="Node"]
 script = ExtResource( 1 )
+avatar_id = "Sylvie"
 
 [node name="window_icon" type="Sprite" parent="."]
 position = Vector2( 53.5553, 46.9968 )

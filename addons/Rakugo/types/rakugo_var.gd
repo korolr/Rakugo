@@ -21,7 +21,7 @@ func _init(var_id:String, var_value, var_type: = 0, var_prefix: = ""):
 	_type = var_type
 	_prefix = var_prefix
 
-static func _get_type() -> int:
+func _get_type() -> int:
 	return _type
 
 func _set_value(var_value) -> void:
@@ -71,5 +71,5 @@ func parse_text(text:String, open:String, close:String) -> String:
 	var s = open + _id + close
 	return text.replace(s, to_string())
 
-static func _get_var_prefix() -> String:
+func _get_var_prefix() -> String:
 	return _prefix

@@ -61,15 +61,14 @@ node_id = "RakugoAnimPlayer"
 [node name="start" type="Node" parent="dialogs"]
 script = ExtResource( 5 )
 begin_from = [ "dialog", "start" ]
-dialogs_names = [ "start" ]
+dialogs_names = [ "start", "rightaway", "later" ]
 
 [node name="rightaway" type="Node" parent="dialogs"]
 script = ExtResource( 6 )
+dialogs_names = [ "rightaway", "game", "book" ]
 
 [node name="game" type="Node" parent="dialogs"]
 script = ExtResource( 7 )
-root = null
-begin_from = null
-dialogs_names = null
+dialogs_names = [ "game" ]
 
 [editable path="backgrounds"]

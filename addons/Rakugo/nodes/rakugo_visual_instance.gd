@@ -94,7 +94,7 @@ func _exit_tree() -> void:
 		remove_from_group("save")
 		return
 
-	var id = NodeLink._get_var_prefix + node_id
+	var id = NodeLink.new("").var_prefix + node_id
 	Rakugo.variables.erase(id)
 
 func on_save() -> void:

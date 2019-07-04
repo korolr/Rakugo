@@ -3,7 +3,7 @@ extends GDScriptDialog
 onready var s = get_var("s")
 onready var m = get_var("m")
 
-func rightaway(node_name, dialog_name):
+func game(node_name, dialog_name):
 	var cd = check_dialog(node_name, dialog_name, "rightaway")
 
 	if not cd:
@@ -59,6 +59,6 @@ func rightaway(node_name, dialog_name):
 				"You know you could never disappoint me, [s.name]."
 			})
 
-		8:
-			jump("Start", "marry", "marry")
+#		8:
+#			jump("Start", "marry", "marry")
 			

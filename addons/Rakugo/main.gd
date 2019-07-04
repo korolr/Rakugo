@@ -392,7 +392,8 @@ func on_stop_audio(node_id:String) -> void:
 ## use to add/register dialog
 ## func_name is name of func that is going to be use as dialog
 func add_dialog(node:Node, func_name:String) -> void:
-	connect("story_step", node, func_name)
+	if  not is_connected("story_step", node, func_name):
+		connect("story_step", node, func_name)
 
 ## parse text like in renpy to bbcode if mode == "renpy"
 ## or parse bbcode with {vars} if mode == "bbcode"
@@ -474,11 +475,11 @@ func get_value(var_name:String):
 	return null
 
 func get_node_value(var_name:String) -> Dictionary:
-	var s = NodeLink._get_var_prefix
+	var s = NodeLink.new("").var_prefix
 	return get_value(s + var_name)
 
 func get_avatar_value(var_name:String) -> Dictionary:
-	var s = Avatar._get_var_prefix
+	var s = Avatar.new("").var_prefix
 	return get_value(s + var_name)
 
 ## returns type of variable defined using define
@@ -525,8 +526,8 @@ func avatar_link(node_id:String, node:NodePath) -> Avatar:
 	return $Define.avatar_link(node_id, node, variables)
 
 func get_avatar_link(node_id:String) -> Avatar:
-	var s = NodeLink.new("").var_prefix
-	return get_var(s + node_id) as NodeLink
+	var s = Avatar.new("").var_prefix
+	return get_var(s + node_id) as Avatar
 
 ## add/overwrite global subquest that Rakugo will see
 ## and returns it as RakugoSubQuest for easy use

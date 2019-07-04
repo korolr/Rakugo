@@ -76,7 +76,7 @@ func node_link(node_id:String, node_path: NodePath, variables:Dictionary) -> Nod
 
 func avatar(avatar_id:String, node_path: NodePath, variables:Dictionary) -> Avatar:
 	var avatar_var = Avatar.new(avatar_id)
-	avatar_var.value["avatar_path"] = avatar_path
+	avatar_var.node_path = node_path
 	variables[avatar_var.id] = avatar_var
 	return avatar_var
 

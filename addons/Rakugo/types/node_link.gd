@@ -8,7 +8,10 @@ func _init(var_id:String, var_type := Rakugo.Type.NODE, var_prefix := "node_link
 	pass
 
 func _set_node_path(path: NodePath):
-	value["node_path"] = path
+	if value:
+		value["node_path"] = path
+	else:
+		value =  {"node_path":path}
 
 func _get_node_path() -> NodePath:
 	if node_path in value:
