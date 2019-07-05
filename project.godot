@@ -189,6 +189,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://addons/Rakugo/nodes/rakugo_say_panel.gd"
 }, {
+"base": "Spatial",
+"class": "RakugoSpatial",
+"language": "GDScript",
+"path": "res://addons/Rakugo/nodes/rakugo_visual_instance.gd"
+}, {
 "base": "RakugoVar",
 "class": "RakugoText",
 "language": "GDScript",
@@ -238,11 +243,6 @@ _global_script_classes=[ {
 "class": "RakugoVector3",
 "language": "GDScript",
 "path": "res://addons/Rakugo/types/rakugo_vector3.gd"
-}, {
-"base": "VisualInstance",
-"class": "RakugoVisualInstance",
-"language": "GDScript",
-"path": "res://addons/Rakugo/nodes/rakugo_visual_instance.gd"
 }, {
 "base": "Node",
 "class": "RootNode",
@@ -341,6 +341,7 @@ _global_script_class_icons={
 "RakugoQuestButton": "",
 "RakugoRangedVar": "",
 "RakugoSayPanel": "res://addons/Rakugo/icons/rakugo_panel.svg",
+"RakugoSpatial": "res://addons/Rakugo/icons/rakugo_spatial.svg",
 "RakugoText": "",
 "RakugoTextLabel": "",
 "RakugoTextPasser": "",
@@ -351,7 +352,6 @@ _global_script_class_icons={
 "RakugoVarLabel": "",
 "RakugoVector2": "",
 "RakugoVector3": "",
-"RakugoVisualInstance": "res://addons/Rakugo/icons/rakugo_spatial.svg",
 "RootNode": "",
 "RootNode2D": "",
 "Save": "",

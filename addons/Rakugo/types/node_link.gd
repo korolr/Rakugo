@@ -1,23 +1,9 @@
 extends RakugoVar
 class_name NodeLink
 
-var node_path setget _set_node_path, _get_node_path
-
 func _init(var_id:String, var_type := Rakugo.Type.NODE, var_prefix := "node_link_").(
 	var_id, {"node_path":""}, var_type, var_prefix) -> void:
 	pass
-
-func _set_node_path(path: NodePath):
-	if value:
-		value["node_path"] = path
-	else:
-		value =  {"node_path":path}
-
-func _get_node_path() -> NodePath:
-	if node_path in value:
-		return value["node_path"]
-
-	return NodePath()
 
 func _set_value(dict:Dictionary) -> void:
 	._set_value(dict)

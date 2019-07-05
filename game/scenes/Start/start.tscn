@@ -49,9 +49,7 @@ editor/display_folded = true
 position = Vector2( 558.514, 322.834 )
 z_index = -1
 
-[node name="RakugoAnimPlayer" type="AnimationPlayer" parent="characters" groups=[
-"save",
-]]
+[node name="RakugoAnimPlayer" type="AnimationPlayer" parent="characters"]
 anims/sylvie_go = SubResource( 1 )
 script = ExtResource( 4 )
 node_id = "RakugoAnimPlayer"

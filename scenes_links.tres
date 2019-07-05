@@ -1,9 +1,10 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://game/scenes/Start/start.tscn" type="PackedScene" id=1]
-[ext_resource path="res://addons/Rakugo/types/scenes_links.gd" type="Script" id=2]
+[ext_resource path="res://game/scenes/Test3D/3DTest.tscn" type="PackedScene" id=2]
+[ext_resource path="res://addons/Rakugo/types/scenes_links.gd" type="Script" id=3]
 
 [resource]
-script = ExtResource( 2 )
-ids = [ "Start" ]
-scenes = [ ExtResource( 1 ) ]
+script = ExtResource( 3 )
+ids = [ "Start", "Test3D" ]
+scenes = [ ExtResource( 1 ), ExtResource( 2 ) ]

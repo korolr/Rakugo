@@ -1,0 +1,105 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://addons/Rakugo/nodes/root_node.gd" type="Script" id=1]
+[ext_resource path="res://game/scenes/Test3D/Test3DDialog.gd" type="Script" id=2]
+[ext_resource path="res://addons/Rakugo/nodes/character.gd" type="Script" id=3]
+[ext_resource path="res://addons/Rakugo/nodes/rakugo_visual_instance.gd" type="Script" id=4]
+[ext_resource path="res://game/characters/sylvie/SylvieAvatar.tscn" type="PackedScene" id=5]
+[ext_resource path="res://game/characters/sylvie/green/sylvie green.png" type="Texture" id=6]
+[ext_resource path="res://game/characters/sylvie/green/sylvie green giggle.png" type="Texture" id=7]
+[ext_resource path="res://game/characters/sylvie/green/sylvie green normal.png" type="Texture" id=8]
+[ext_resource path="res://game/characters/sylvie/green/sylvie green smile.png" type="Texture" id=9]
+[ext_resource path="res://game/characters/sylvie/green/sylvie green surprised.png" type="Texture" id=10]
+[ext_resource path="res://game/characters/sylvie/blue/sylvie blue.png" type="Texture" id=11]
+[ext_resource path="res://game/characters/sylvie/blue/sylvie blue giggle.png" type="Texture" id=12]
+[ext_resource path="res://game/characters/sylvie/blue/sylvie blue normal.png" type="Texture" id=13]
+[ext_resource path="res://game/characters/sylvie/blue/sylvie blue smile.png" type="Texture" id=14]
+[ext_resource path="res://game/characters/sylvie/blue/sylvie blue surprised.png" type="Texture" id=15]
+
+[node name="RootNode" type="Spatial"]
+script = ExtResource( 1 )
+root = true
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.03534, 0.667965, 4.16629 )
+current = true
+
+[node name="Test3DDialog" type="Node" parent="."]
+script = ExtResource( 2 )
+begin_from = [ "Test3D", "test" ]
+dialogs_names = [ "test" ]
+
+[node name="characters" type="Spatial" parent="."]
+
+[node name="Me" type="Node" parent="characters"]
+script = ExtResource( 3 )
+character_id = "m"
+character_name = "Me"
+color = Color( 0.784314, 0.784314, 1, 1 )
+stats = {
+
+}
+kind = "adv"
+
+[node name="Sylvie" type="Spatial" parent="characters"]
+script = ExtResource( 4 )
+node_id = "Spatial"
+camera = NodePath("../../Camera")
+
+[node name="Character" type="Node" parent="characters/Sylvie"]
+script = ExtResource( 3 )
+character_id = "s"
+character_name = "Sylvie"
+color = Color( 0.784314, 1, 0.784314, 1 )
+stats = {
+
+}
+avatar = ExtResource( 5 )
+kind = "adv"
+
+[node name="green" type="Sprite3D" parent="characters/Sylvie"]
+editor/display_folded = true
+visible = false
+texture = ExtResource( 6 )
+
+[node name="giggle" type="Sprite3D" parent="characters/Sylvie/green"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.392009, 2.29504, 0 )
+visible = false
+texture = ExtResource( 7 )
+
+[node name="normal" type="Sprite3D" parent="characters/Sylvie/green"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.374959, 2.29504, 0 )
+visible = false
+texture = ExtResource( 8 )
+
+[node name="smile" type="Sprite3D" parent="characters/Sylvie/green"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.374959, 2.29504, 0 )
+visible = false
+texture = ExtResource( 9 )
+
+[node name="surprised" type="Sprite3D" parent="characters/Sylvie/green"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.374959, 2.29504, 0 )
+visible = false
+texture = ExtResource( 10 )
+
+[node name="blue" type="Sprite3D" parent="characters/Sylvie"]
+texture = ExtResource( 11 )
+
+[node name="giggle" type="Sprite3D" parent="characters/Sylvie/blue"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.119296, 2.38281, 0 )
+texture = ExtResource( 12 )
+
+[node name="normal" type="Sprite3D" parent="characters/Sylvie/blue"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.119296, 2.38281, 0 )
+visible = false
+texture = ExtResource( 13 )
+
+[node name="smile" type="Sprite3D" parent="characters/Sylvie/blue"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.119296, 2.38281, 0 )
+visible = false
+texture = ExtResource( 14 )
+
+[node name="surprised" type="Sprite3D" parent="characters/Sylvie/blue"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.119296, 2.38281, 0 )
+visible = false
+texture = ExtResource( 15 )
